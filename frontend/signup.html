@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <style>
+        body {
+            background-color: #4285F4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #3578E5;
+        }
+
+        .form-group .social-login {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .form-group .social-login button {
+            background-color: white;
+            color: #333;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group .social-login button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .form-group .social-login i {
+            font-size: 1.2rem;
+        }
+
+        .form-group .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: #4285F4;
+        }
+
+        .form-group .create-account {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+
+        .form-group .create-account a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <div class="form-group social-login">
+                    <button type="button"><i class="fab fa-facebook-f"></i> Login with Facebook</button>
+                    <button type="button"><i class="fab fa-google"></i> Login with Google</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h2>Signup</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Signup</button>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="create-account">Already have an account? Login</a>
+                </div>
+                <div class="form-group social-login">
+                    <button type="button"><i class="fab fa-facebook-f"></i> Login with Facebook</button>
+                    <button type="button"><i class="fab fa-google"></i> Login with Google</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
